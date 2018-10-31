@@ -10,7 +10,6 @@ export default {
     }
   },
   actions: {
-    //获取用户信息
     async getUserInfo({ commit, state }) {
       try {
         const userObj = await request({
