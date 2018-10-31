@@ -4,7 +4,6 @@
 	</div>
 </template>
 <script>
-import {request} from '@/utils/axios'
 import echarts from 'echarts'
 import resize from '@/components/Charts/mixins/resize'
 
@@ -15,15 +14,15 @@ export default {
 			chart: null
 		}
 	},
+	computed: {
+		user() {
+			return this.$store.state.user
+		}
+	},
 	async mounted() {
+		await this.$store.dispatch('getUserInfo')
+		console.log(this.user.name)
 		this.initChart()
-		const data = await request({
-			method: 'POST',
-			url: '/login/login',
-			//data: {},
-			timeout: 5000,
-		})
-		console.log(data)
 	},
 	beforeDestroy() {
 		if (!this.chart) {
