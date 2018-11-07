@@ -23,6 +23,12 @@ export default new Router({
       path: '/chart',
       name: 'chart',
       component: () => import(/* webpackChunkName: "chart" */ './views/Chart/Index.vue')
+    },
+
+    {
+      path: '/table',
+      name: 'table',
+      component: () => import(/* webpackChunkName: "chart" */ './views/Table.vue')
     }
   ]
 })
