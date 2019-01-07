@@ -28,12 +28,12 @@ export default new Router({
     {
       path: '/table',
       name: 'table',
-      component: () => import(/* webpackChunkName: "chart" */ './views/Table.vue')
+      component: () => import(/* webpackChunkName: "table" */ './views/Table.vue')
     },
     {
-      path: '/e',
-      name: 'e',
-      component: () => import(/* webpackChunkName: "chart" */ './views/E.vue')
+      path: '/earth',
+      name: 'earth',
+      component: () => import(/* webpackChunkName: "earth" */ './views/earth/index.vue')
     }
   ]
 })
