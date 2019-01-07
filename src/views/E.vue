@@ -40,7 +40,8 @@ export default {
           min: 0,
           max: 2000,
           inRange: {
-            color: ['transparent']
+            //color: ['rgba(255,255,255,.1)'],
+            //color: ['transparent']
             //colorAlpha: .1,
           }
         },
@@ -59,7 +60,10 @@ export default {
             itemStyle: {
               borderColor: '#89a9d7',
               areaColor: 'transparent',
-              opacity: 0.8
+              //areaColor: "#1f3161",
+              //backgroundColor: 'rgba(255,255,255,.1)',
+              //color: "rgba(255,255,255,.1)",
+              //opacity: .6
             },
             //鼠标经过
             emphasis: {
@@ -89,6 +93,13 @@ export default {
 
       // http://visibleearth.nasa.gov/view_cat.php?categoryID=1484
       const option = {
+        title: {
+          x: 'center',
+          y: '70',
+          textStyle: {
+            color: '#f7f7f7'
+          }
+        },
         globe: {
           baseTexture: mapChart,
           //heightTexture: "/asset/get/s/data-1491889019097-rJQYikcpl.jpg",
@@ -96,14 +107,15 @@ export default {
           //shading: 'lambert',
           light: {
             ambient: {
-              intensity: 0.8 //环境光的强度
+              intensity: 1 //环境光的强度
             },
             main: {
-              intensity: 0.1 //场景主光源的设置，太阳光强度
+              intensity: 0.5 //场景主光源的设置，太阳光强度
             }
           },
           viewControl: {
             autoRotate: true, //是否开启视角绕物体的自动旋转查看
+            autoRotateAfterStill: 1, //在鼠标静止操作后恢复自动旋转的时间间隔
             autoRotateDirection: 'ccw', //默认是 'cw' 也就是从上往下看是顺时针方向，也可以取 'ccw'，既从上往下看为逆时针方向。
             autoRotateSpeed: 20, // 角度/秒
             // 无法旋转
@@ -111,17 +123,17 @@ export default {
             // 只能横向旋转
             rotateSensitivity: [1, 0],
             //0无法缩放，default: 1
-            //zoomSensitivity: 0,
+            zoomSensitivity: 0,
             distance: 300 //距离地球表面的距离
           }
         },
         series: {
           type: 'scatter3D',
           coordinateSystem: 'globe',
-          blendMode: 'lighter', //混合模式，目前支持'source-over'，'lighter'，默认使用的'source-over'是通过 alpha 混合，而'lighter'是叠加模式，该模式可以让数据集中的区域因为叠加而产生高亮的效果
+          //blendMode: 'lighter', //混合模式，目前支持'source-over'，'lighter'，默认使用的'source-over'是通过 alpha 混合，而'lighter'是叠加模式，该模式可以让数据集中的区域因为叠加而产生高亮的效果
           symbolSize: 1, //点的大小
           itemStyle: {
-            color: 'rgba(137, 169, 215, .1)',
+            color: 'rgba(137, 169, 215, .3)',
             //opacity: .5
           },
           //鼠标经过
@@ -146,6 +158,12 @@ export default {
       if (option && typeof option === 'object') {
         myChart.setOption(option, true)
       }
+      mapChart.on('click', this.handleChartsItem)
+      //mapChart.getZr().on('click', this.handleChartsItem)
+
+    },
+    handleChartsItem(params) {
+      console.log(params)
     }
   }
 }
@@ -155,7 +173,7 @@ body{
   background: #1f274b;
 }
 #chart {
-  width: 800px;
+  width: 600px;
   height: 600px;
   margin: 0 auto;
   background: #1f274b;
