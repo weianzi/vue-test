@@ -2431,20 +2431,6 @@ echarts-gl@^1.1.1:
     claygl "^1.2.1"
     zrender "^4.0.4"
 
-echarts-x@^1.0.0-alpha:
-  version "1.0.0-alpha"
-  resolved "https://registry.yarnpkg.com/echarts-x/-/echarts-x-1.0.0-alpha.tgz#ab82ed3e119cdc4be12291a4a730ead46a99f1e8"
-  dependencies:
-    echarts "3.5.2"
-    qtek "0.3.2"
-    zrender "3.4.0"
-
-echarts@3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/echarts/-/echarts-3.5.2.tgz#c5baf0157c257394b22d3e89937eb368a27bf6ac"
-  dependencies:
-    zrender "^3.4.2"
-
 echarts@^4.2.0-rc.2:
   version "4.2.0-rc.2"
   resolved "https://registry.yarnpkg.com/echarts/-/echarts-4.2.0-rc.2.tgz#6a98397aafa81b65cbf0bc15d9afdbfb244df91e"
@@ -5409,10 +5395,6 @@ qs@6.5.2, qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
 
-qtek@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/qtek/-/qtek-0.3.2.tgz#263e3b4131820bf10efcb8465373b2451f416c42"
-
 qtek@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/qtek/-/qtek-0.6.1.tgz#57e1c52388c67ae2d1c53b58b566d7f1936a8020"
@@ -7062,14 +7044,6 @@ yorkie@^2.0.0:
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
-zrender@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/zrender/-/zrender-3.4.0.tgz#aec7694e3adbb50b03535dc6a632eb212d01edc9"
-
 zrender@4.0.5, zrender@^4.0.4, zrender@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.5.tgz#6e8f738971ce2cd624aac82b2156729b1c0e5a82"
-
-zrender@^3.4.2:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/zrender/-/zrender-3.7.4.tgz#f847d53948481ef6d42906d1ea9aeec7acbefdf2"
