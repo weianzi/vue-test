@@ -42,7 +42,7 @@ export default {
       this.chart.setOption(this.option)
 
       this.chart.on('click', param => {
-        //console.log(param)
+        console.log(param)
         this.option.series.levels = [
           [
             {},

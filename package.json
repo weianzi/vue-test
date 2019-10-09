@@ -23,7 +23,7 @@
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-plugin-pwa": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
+    "@vue/cli-service": "^3.3.0",
     "axios": "^0.18.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
