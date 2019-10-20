@@ -11,24 +11,24 @@
         "children": [
           {
             "value": 1,
-            "name": "子公司2",
+            "name": "子公司11",
             "sort": 3
           },
           {
             "value": 2,
-            "name": "子公司232",
+            "name": "子公司12",
             "sort": 3,
             "children": [
               {
                 "value": 1,
                 "children": [],
-                "name": "子公司31",
+                "name": "子公司121",
                 "sort": 4
               },
               {
                 "value": 1,
                 "children": [],
-                "name": "子公司32",
+                "name": "子公司122",
                 "sort": 4
               }
             ]
@@ -42,21 +42,19 @@
         "children": [
           {
             "value": 1,
-            "children": [],
-            "name": "子公司31",
+            "name": "子公司21",
             "sort": 3,
             "children": [
               {
                 "value": 1,
-                "children": [],
-                "name": "子公司41",
-                "sort": 3,
+                "name": "子公司211",
+                "sort": 4,
                 "children": [
                   {
                     "value": 1,
                     "children": [],
-                    "name": "子公司51",
-                    "sort": 3
+                    "name": "子公司2111",
+                    "sort": 5
                   }
                 ]
               }
@@ -65,7 +63,7 @@
           {
             "value": 2,
             "children": [],
-            "name": "子公司2343",
+            "name": "子公司31",
             "sort": 3
           }
         ]
