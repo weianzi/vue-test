@@ -31,9 +31,8 @@ export default {
   },
   methods: {
     initChart() {
-      this.chart = echarts.init(document.getElementById('chart'), null, {
-        renderer: 'svg'
-      })
+      this.chart = echarts.init(document.getElementById('chart'))
+      //, null, { renderer: 'svg'}
       this.chart.setOption(this.option)
 
       // this.chart.dispatchAction({
