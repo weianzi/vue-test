@@ -115,35 +115,9 @@ export default {
 
 const option = {
   backgroundColor: '#000',
-  series: {
-    radius: ['28%', '80%'],
-    center: ['50%', '50%'],
-    type: 'sunburst',
-    sort: null,
-    z: 3,
-    tooltip: {
+      tooltip: {
       formatter: function(params) {
-        let html =
-          '<div class="index_model">' +
-          '<h3 class="index_model_h3">' +
-          params.name +
-          '</h3>' +
-          '<div class="index_model_rate">' +
-          params.value +
-          '%<span>' +
-          '控股' +
-          '</span></div>' +
-          '<div class="index_model_proportion">' +
-          '企业股权占比' +
-          '</div><div style="width:70%;padding:0.04rem 0;">' +
-          '全资子企业' +
-          '<span style="float:right;">' +
-          '7 家' +
-          '</span></div><div style="width:70%;padding:0.04rem 0;">' +
-          '控股子企业' +
-          '<span style="float:right;">' +
-          '8家' +
-          '</span></div></div>'
+        let html = params.name
         if (params.name == '') {
           return ''
         } else {
@@ -151,6 +125,13 @@ const option = {
         }
       }
     },
+  series: {
+    radius: ['28%', '80%'],
+    center: ['50%', '50%'],
+    type: 'sunburst',
+    sort: null,
+    z: 3,
+
     //allowDrillToNode: true,
     //nodeClick: false,
     cursor: 'pointer',

@@ -36,10 +36,10 @@ export default new Router({
       name: 'table',
       component: () => import(/* webpackChunkName: "table" */ './views/Table.vue')
     },
-    {
-      path: '/earth',
-      name: 'earth',
-      component: () => import(/* webpackChunkName: "earth" */ './views/earth/index.vue')
-    }
+    // {
+    //   path: '/earth',
+    //   name: 'earth',
+    //   component: () => import(/* webpackChunkName: "earth" */ './views/earth/index.vue')
+    // }
   ]
 })
