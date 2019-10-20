@@ -1,0 +1,75 @@
+[
+  {
+    "value": 8,
+    "name": "无线电集团总部",
+    "sort": 1,
+    "children": [
+      {
+        "value": 3,
+        "name": "广电研究院",
+        "sort": 2,
+        "children": [
+          {
+            "value": 1,
+            "name": "广电信息231",
+            "sort": 3
+          },
+          {
+            "value": 2,
+            "name": "广电信息232",
+            "sort": 3,
+            "children": [
+              {
+                "value": 1,
+                "children": [],
+                "name": "广电信息441",
+                "sort": 4
+              },
+              {
+                "value": 1,
+                "children": [],
+                "name": "广电信息442",
+                "sort": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": 2,
+        "name": "广电计量",
+        "sort": 2,
+        "children": [
+          {
+            "value": 1,
+            "children": [],
+            "name": "广电计量31",
+            "sort": 3,
+            "children": [
+              {
+                "value": 1,
+                "children": [],
+                "name": "广电计量41",
+                "sort": 3,
+                "children": [
+                  {
+                    "value": 1,
+                    "children": [],
+                    "name": "广电计量51",
+                    "sort": 3
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "value": 2,
+            "children": [],
+            "name": "广电计量32",
+            "sort": 3
+          }
+        ]
+      }
+    ]
+  }
+]
