@@ -36,6 +36,11 @@ export default new Router({
       name: 'table',
       component: () => import(/* webpackChunkName: "table" */ './views/Table.vue')
     },
+    {
+      path: '/code',
+      name: 'code',
+      component: () => import(/* webpackChunkName: "chart" */ './views/CodeEditor')
+    },
     // {
     //   path: '/earth',
     //   name: 'earth',
