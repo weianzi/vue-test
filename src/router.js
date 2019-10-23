@@ -17,30 +17,35 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: () =>
+        import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
       path: '/chart',
       name: 'chart',
-      component: () => import(/* webpackChunkName: "chart" */ './views/Chart/Index.vue')
+      component: () =>
+        import(/* webpackChunkName: "chart" */ './views/Chart/Index.vue')
     },
-    
+
     {
       path: '/chart/ring',
       name: 'chartRing',
-      component: () => import(/* webpackChunkName: "chart" */ './views/Chart/Ring.vue')
+      component: () =>
+        import(/* webpackChunkName: "chart" */ './views/Chart/Ring.vue')
     },
 
     {
       path: '/table',
       name: 'table',
-      component: () => import(/* webpackChunkName: "table" */ './views/Table.vue')
+      component: () =>
+        import(/* webpackChunkName: "table" */ './views/Table.vue')
     },
     {
       path: '/code',
       name: 'code',
-      component: () => import(/* webpackChunkName: "chart" */ './views/CodeEditor')
-    },
+      component: () =>
+        import(/* webpackChunkName: "chart" */ './views/CodeEditor')
+    }
     // {
     //   path: '/earth',
     //   name: 'earth',
