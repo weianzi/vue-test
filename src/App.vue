@@ -25,7 +25,7 @@ export default {
       }, 200)
     })
 
-    this.test()
+    //this.test()
   },
   methods: {
     async test() {
