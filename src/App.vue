@@ -16,9 +16,11 @@
         v-model="value"
         :options="options"
         @change="handleChange"
-        change-on-select
+        
+        :props="{ checkStrictly: true }"
         :show-all-levels="false"
-      ></el-cascader>
+      />
+      <!-- {{/**change-on-select**/}} -->
     </div>
   </div>
 </template>
@@ -324,8 +326,6 @@ export default {
   }
 }
 </script>
-
-
 <style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -342,6 +342,22 @@ export default {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+.el-cascader-panel {
+  .el-radio {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .el-radio__input {
+    visibility: hidden;
+  }
+  .el-cascader-node__postfix {
+    top: 10px;
   }
 }
 </style>
