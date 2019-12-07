@@ -40,18 +40,18 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "table" */ './views/Table.vue')
     },
-    {
-      path: '/code',
-      name: 'code',
-      component: () =>
-        import(/* webpackChunkName: "chart" */ './views/CodeEditor')
-    },
-    {
-      path: '/brace',
-      name: 'brace',
-      component: () =>
-        import(/* webpackChunkName: "brace" */ './views/Brace')
-    },
+    // {
+    //   path: '/code',
+    //   name: 'code',
+    //   component: () =>
+    //     import(/* webpackChunkName: "chart" */ './views/CodeEditor')
+    // },
+    // {
+    //   path: '/brace',
+    //   name: 'brace',
+    //   component: () =>
+    //     import(/* webpackChunkName: "brace" */ './views/Brace')
+    // },
     {
       path: '/ace',
       name: 'ace',
