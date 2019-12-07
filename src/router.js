@@ -45,6 +45,18 @@ export default new Router({
       name: 'code',
       component: () =>
         import(/* webpackChunkName: "chart" */ './views/CodeEditor')
+    },
+    {
+      path: '/brace',
+      name: 'brace',
+      component: () =>
+        import(/* webpackChunkName: "brace" */ './views/Brace')
+    },
+    {
+      path: '/ace',
+      name: 'ace',
+      component: () =>
+        import(/* webpackChunkName: "ace" */ './views/Ace')
     }
     // {
     //   path: '/earth',
