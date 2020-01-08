@@ -31,7 +31,7 @@ export default new Router({
       path: '/chart/ring',
       name: 'chartRing',
       component: () =>
-        import(/* webpackChunkName: "chart" */ './views/Chart/Ring.vue')
+        import(/* webpackChunkName: "ring" */ './views/Chart/Ring.vue')
     },
 
     {
@@ -44,7 +44,7 @@ export default new Router({
     //   path: '/code',
     //   name: 'code',
     //   component: () =>
-    //     import(/* webpackChunkName: "chart" */ './views/CodeEditor')
+    //     import(/* webpackChunkName: "code" */ './views/CodeEditor')
     // },
     // {
     //   path: '/brace',

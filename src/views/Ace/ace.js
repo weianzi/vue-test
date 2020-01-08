@@ -30,8 +30,7 @@ module.exports = {
         return n + 'px'
       }
       return n
-    },
-
+    }
   },
   watch: {
     value: function(val) {
@@ -73,10 +72,10 @@ module.exports = {
 
     require('brace/ext/emmet')
 
-    var editor = (vm.editor = ace.edit(this.$el))
+    var editor = (this.editor = ace.edit(this.$el))
     editor.$blockScrolling = Infinity
 
-    this.$emit('init', editor)
+    this.$emit('init')
 
     //editor.setOption("enableEmmet", true);
     let session = editor.getSession()

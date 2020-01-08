@@ -118,10 +118,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<<<<<<< HEAD
 <style lang="less">
 
-=======
-<style scoped lang="less">
->>>>>>> 520697bb6e441451e82481d7d314552de2a0671c
 </style>

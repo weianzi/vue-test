@@ -106,6 +106,20 @@ export default {
 
     window.removeEventListener('resize', this.resizeFn(3))
     window.removeEventListener('resize', this.resizeFn(4, 'r'))
+
+    setTimeout(() => {
+      const css = `
+        body{
+          background: #ddd;
+        }
+        #nav a{
+          color: #f00;
+        }
+      `
+      const style = document.createElement('style')
+      style.innerHTML = css
+      document.getElementsByTagName('head')[0].append(style)
+    }, 3000)
   },
   methods: {
     handleChange(value) {
